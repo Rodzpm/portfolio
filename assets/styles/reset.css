@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
+  height: 100%;
 }
 
 blockquote,
@@ -17,7 +22,7 @@ figure,
 p,
 pre {
   margin: 0;
-  font-family: "poppins", sans-serif;
+  font-family: JetBrains Mono, monospace;
   -webkit-font-smoothing: antialiased;
 }
 
