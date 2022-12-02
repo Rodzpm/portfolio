@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="skills-text">
-                    A future game developper
+                    A futur game developper
                 </div>
                 <div class="game-box">
                     <img src="https://i.ibb.co/z4wV0qr/Untitled-design-7.png" alt="">
