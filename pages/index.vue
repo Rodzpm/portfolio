@@ -41,16 +41,22 @@
                 </div>
                 <div class="language-box">
                     <div class="language">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917"
+                        <img id="part1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917"
                             alt="" />
-                        <img src="https://i.ibb.co/CtC08Wf/Untitled-design-5-removebg-preview.png" alt="">
-                        <h2>2 months</h2>
+                        <img id="part1" src="https://i.ibb.co/CtC08Wf/Untitled-design-5-removebg-preview.png" alt="">
+                        <h2 id="part1">2 months</h2>
+                        <h1 id="part2">Language</h1>
+                        <h1 id="part2" style="color:#e06c75;">C</h1>
+                        <h1 id="part2">Low-level</h1>
                     </div>
                     <div class="language">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                        <img id="part1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
                             alt="" />
-                        <img src="https://i.ibb.co/dmCQbZx/Untitled-design-3-removebg-preview.png" alt="">
-                        <h2>5 years</h2>
+                        <img id="part1" src="https://i.ibb.co/dmCQbZx/Untitled-design-3-removebg-preview.png" alt="">
+                        <h2 id="part1">5 years</h2>
+                        <h1 id="part2">Language</h1>
+                        <h1 id="part2" style="color:#e06c75;">Python</h1>
+                        <h1 id="part2">High-level</h1>
                     </div>
                 </div>
                 <div class="skills-text">
@@ -168,6 +174,7 @@
     font-size: 4em;
 }
 
+
 .language-box {
     display: flex;
     flex-flow: row;
@@ -177,7 +184,34 @@
 
 .language {
     display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    width: 250px;
     flex-flow: column;
+    transition: 500ms;
+}
+
+.language #part2{
+    display: none;
+    transition: 500ms;
+}
+
+.language:hover{
+    background-color: #48ACF0;
+    transition: 500ms;
+}
+
+.language:hover #part1{
+    transition: 500ms;
+    display: none;
+}
+
+.language:hover #part2{
+    display: flex;
+    margin-top: 20px;
+    transition: 500ms;
+
 }
 
 a {
@@ -289,8 +323,6 @@ a:hover {
     align-content: space-around;
     justify-content: space-around;
 }
-
-
 
 @media screen and (max-width: 1763px) {
     #about .println {
