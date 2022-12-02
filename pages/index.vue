@@ -12,9 +12,9 @@
             </div>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/allan-leherpeux-6b2953257/"><img
-                        src="https://img.icons8.com/ios-filled/100/000000/linkedin-2--v1.png" /></a>
+                        src="https://img.icons8.com/fluency/100/null/linkedin-2.png" /></a>
                 <a href="https://github.com/Rodzpm"><img
-                        src="https://img.icons8.com/ios-glyphs/100/null/github.png" /></a>
+                        src="https://img.icons8.com/color-glass/100/null/github--v1.png" /></a>
             </div>
         </div>
         <div class="content-box">
@@ -90,22 +90,29 @@
                 <div class="contact-box">
                     <a href="https://www.linkedin.com/in/allan-leherpeux-6b2953257/">
                         <div class="boite-contact">
-                            <img src="https://img.icons8.com/ios-filled/100/000000/linkedin-2--v1.png" alt="">
+                            <img src="https://img.icons8.com/fluency/100/null/linkedin-2.png" alt="">
                             <h3>allan-leherpeux</h3>
                         </div>
                     </a>
                     <a href="https://github.com/Rodzpm">
                         <div class="boite-contact">
-                            <img src="https://img.icons8.com/ios-glyphs/100/null/github.png" alt="">
+                            <img src="https://img.icons8.com/color-glass/100/null/github--v1.png" alt="">
                             <h3>rodzpm</h3>
                         </div>
                     </a>
                     <a href="mailto:allan.leherpeux@epitech.eu">
                         <div class="boite-contact">
-                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" alt="">
+                            <img src="https://img.icons8.com/color/48/null/apple-mail.png" alt="">
                             <h3>allan.leherpeux@epitech.eu</h3> 
                         </div>
                     </a>
+                    <a href="https://discordapp.com/users/371202257955586050">
+                        <div class="boite-contact">
+                            <img src="https://img.icons8.com/color/100/null/discord-logo.png" alt="">
+                            <h3>Allan_Leherpeux</h3> 
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
         </div>
