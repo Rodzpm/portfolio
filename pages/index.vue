@@ -77,6 +77,31 @@
                     </div>
                 </div>
             </div>
+            <div id="contact">
+                <div class="skills-text">
+                    Contact Me
+                </div>
+                <div class="contact-box">
+                    <a href="https://www.linkedin.com/in/allan-leherpeux-6b2953257/">
+                        <div class="boite-contact">
+                            <img src="https://img.icons8.com/ios-filled/100/000000/linkedin-2--v1.png" alt="">
+                            <h3>allan-leherpeux</h3>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Rodzpm">
+                        <div class="boite-contact">
+                            <img src="https://img.icons8.com/ios-glyphs/100/null/github.png" alt="">
+                            <h3>rodzpm</h3>
+                        </div>
+                    </a>
+                    <a href="mailto:allan.leherpeux@epitech.eu">
+                        <div class="boite-contact">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" alt="">
+                            <h3>allan.leherpeux@epitech.eu</h3> 
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -231,6 +256,40 @@ a:hover {
 .project img{
     width: 400px;
 }
+
+#contact{
+    display: flex;
+    flex-flow: column;
+    gap: 100px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.boite-contact{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    align-items:center
+}
+
+.boite-contact img{
+    width: 50px;
+}
+
+.boite-contact h3{
+    padding-top: 10px;
+}
+
+.contact-box{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: baseline;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
 
 
 @media screen and (max-width: 1763px) {
