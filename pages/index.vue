@@ -24,7 +24,7 @@
                 <div class="println">
                     <h1>System</h1>
                     <h1 style="color:white;">.</h1>
-                    <h1 style="color:#e06c75;">out</h1>
+                    <h1 style="color:#e06c75;">oute</h1>
                     <h1 style="color:white;">.</h1>
                     <h1 style="color:#61afef;">println</h1>
                     <h1>("</h1>
