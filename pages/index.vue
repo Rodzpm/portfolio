@@ -53,7 +53,7 @@
                         <img id="part1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
                             alt="" />
                         <img id="part1" src="https://i.ibb.co/dmCQbZx/Untitled-design-3-removebg-preview.png" alt="">
-                        <h2 id="part1">5 years</h2>
+                        <h2 id="part1">4 years</h2>
                         <h1 id="part2">Language</h1>
                         <h1 id="part2" style="color:#e06c75;">Python</h1>
                         <h1 id="part2">High-level</h1>
@@ -150,6 +150,10 @@
     padding: 50px;
     padding-left: 350px;
     background-color: #282c34;
+}
+
+#about{
+    padding: 40px;
 }
 
 #about .jumbo-text {
@@ -280,6 +284,7 @@ a:hover {
     border-radius: 20px 20px 20px 20px;
     transition: 400ms;
 }
+
 
 .project:hover{
     background-color: #48ACF0;
