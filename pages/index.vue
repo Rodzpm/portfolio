@@ -67,9 +67,13 @@
                     My Projects
                 </div>
                 <div class="projects-box">
-                    <div class="project" v-for="item in data">
-                        <img :src="item.description" alt="">
-                        <a :href="item.html_url"><h3>{{item.name}}</h3></a>
+                    <div class="boite" v-for="item in data">
+                        <a :href="item.html_url">
+                            <div class="project">
+                                <img :src="item.description" alt="">
+                                <h3>{{item.name}}</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,6 +166,10 @@ a:hover {
     transition: 500ms;
 }
 
+.boite a:hover{
+    color: white;
+}
+
 .icons img {
     width: 50px;
     margin-right: 30px;
@@ -207,9 +215,17 @@ a:hover {
     flex-flow: column;
     gap: 10px;
     padding: 20px;
-    border-radius: 20px;
     margin-top: 20px;
-    background-color: #515459;
+    background-color: #A73836;
+    border: 12px ridge #A73836;
+    border-radius: 20px 20px 20px 20px;
+    transition: 400ms;
+}
+
+.project:hover{
+    background-color: #48ACF0;
+    border: 12px ridge #48ACF0;
+    transition: 400ms;
 }
 
 .project img{

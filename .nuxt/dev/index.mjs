@@ -22,7 +22,7 @@ import unstorage_47drivers_47fs from 'file:///home/allan/portfolio-2/node_module
 import defu from 'file:///home/allan/portfolio-2/node_modules/defu/dist/defu.mjs';
 import { toRouteMatcher, createRouter } from 'file:///home/allan/portfolio-2/node_modules/radix3/dist/index.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"apiBase":"/api"},"token":""};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -538,12 +538,12 @@ server.listen(listenAddress, () => {
 }
 
 const repo = defineEventHandler(async (event) => {
-  const token = process.env.GH_TOKEN;
+  const config = useRuntimeConfig();
   const { data } = await axios({
     method: "get",
     url: "https://api.github.com/users/rodzpm/repos",
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${config.token}`,
       "Content-type": "application/json",
       "Accept-Encoding": "identity"
     }
