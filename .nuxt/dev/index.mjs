@@ -539,7 +539,6 @@ server.listen(listenAddress, () => {
 
 const repo = defineEventHandler(async (event) => {
   const token = process.env.GH_TOKEN;
-  console.log("token", token);
   const { data } = await axios({
     method: "get",
     url: "https://api.github.com/users/rodzpm/repos",
