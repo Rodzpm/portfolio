@@ -1,26 +1,26 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/allan/portfolio/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/allan/portfolio-2/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file:///home/allan/portfolio/node_modules/std-env/dist/index.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file:///home/allan/portfolio/node_modules/h3/dist/index.mjs';
-import axios from 'file:///home/allan/portfolio/node_modules/axios/index.js';
-import { createRenderer } from 'file:///home/allan/portfolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///home/allan/portfolio/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///home/allan/portfolio/node_modules/vue/server-renderer/index.mjs';
-import { parseURL, withQuery, joinURL } from 'file:///home/allan/portfolio/node_modules/ufo/dist/index.mjs';
-import destr from 'file:///home/allan/portfolio/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file:///home/allan/portfolio/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///home/allan/portfolio/node_modules/ohmyfetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///home/allan/portfolio/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///home/allan/portfolio/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file:///home/allan/portfolio/node_modules/ohash/dist/index.mjs';
-import { createStorage } from 'file:///home/allan/portfolio/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/allan/portfolio/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file:///home/allan/portfolio/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/allan/portfolio/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///home/allan/portfolio-2/node_modules/std-env/dist/index.mjs';
+import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file:///home/allan/portfolio-2/node_modules/h3/dist/index.mjs';
+import axios from 'file:///home/allan/portfolio-2/node_modules/axios/index.js';
+import { createRenderer } from 'file:///home/allan/portfolio-2/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///home/allan/portfolio-2/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///home/allan/portfolio-2/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withQuery, joinURL } from 'file:///home/allan/portfolio-2/node_modules/ufo/dist/index.mjs';
+import destr from 'file:///home/allan/portfolio-2/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file:///home/allan/portfolio-2/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/allan/portfolio-2/node_modules/ohmyfetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///home/allan/portfolio-2/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/allan/portfolio-2/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file:///home/allan/portfolio-2/node_modules/ohash/dist/index.mjs';
+import { createStorage } from 'file:///home/allan/portfolio-2/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/allan/portfolio-2/node_modules/unstorage/dist/drivers/fs.mjs';
+import defu from 'file:///home/allan/portfolio-2/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/allan/portfolio-2/node_modules/radix3/dist/index.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{}};
 const ENV_PREFIX = "NITRO_";
@@ -79,7 +79,7 @@ const timingMiddleware = eventHandler((event) => {
   }.bind(event.res);
 });
 
-const serverAssets = [{"baseName":"server","dir":"/home/allan/portfolio/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/allan/portfolio-2/server/assets"}];
 
 const assets = createStorage();
 
@@ -93,10 +93,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio-2","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio-2/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio-2/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"/home/allan/portfolio-2/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -435,7 +435,7 @@ const errorHandler = (async function errorhandler(error, event) {
     redirect: "manual"
   }).catch(() => null) : null;
   if (!res) {
-    const { template } = await import('file:///home/allan/portfolio/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
+    const { template } = await import('file:///home/allan/portfolio-2/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
     {
       errorObject.description = errorObject.message;
     }
@@ -455,13 +455,13 @@ const errorHandler = (async function errorhandler(error, event) {
   event.res.end(await res.text());
 });
 
-const _lazy_SuYktv = () => Promise.resolve().then(function () { return repo$1; });
-const _lazy_UWskMy = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_fUFOAE = () => Promise.resolve().then(function () { return repo$1; });
+const _lazy_a5y9y8 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/repo', handler: _lazy_SuYktv, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_UWskMy, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_UWskMy, lazy: true, middleware: false, method: undefined }
+  { route: '/api/repo', handler: _lazy_fUFOAE, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_a5y9y8, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_a5y9y8, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -539,13 +539,14 @@ server.listen(listenAddress, () => {
 
 const repo = defineEventHandler(async (event) => {
   const token = process.env.GH_TOKEN;
+  console.log("token", token);
   const { data } = await axios({
     method: "get",
-    url: `https://api.github.com/users/rodzpm/repos`,
+    url: "https://api.github.com/users/rodzpm/repos",
     headers: {
       Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-      "Accept-Encoding": "Identify"
+      "Content-type": "application/json",
+      "Accept-Encoding": "identity"
     }
   });
   return data;
@@ -566,8 +567,8 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/home/allan/portfolio/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('/home/allan/portfolio/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('/home/allan/portfolio-2/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('/home/allan/portfolio-2/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

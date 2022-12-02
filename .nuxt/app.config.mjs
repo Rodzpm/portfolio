@@ -1,5 +1,5 @@
 
-import { defuFn } from '/home/allan/portfolio/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/home/allan/portfolio-2/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

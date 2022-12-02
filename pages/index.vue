@@ -20,11 +20,12 @@
                 <div class="jumbo-text">
                     <h1>Allan</h1>
                     <h1>Leherpeux</h1>
+                    <h5 style="color:#48ACF0;">Epitech Student</h5>
                 </div>
                 <div class="println">
                     <h1>System</h1>
                     <h1 style="color:white;">.</h1>
-                    <h1 style="color:#e06c75;">oute</h1>
+                    <h1 style="color:#e06c75;">out</h1>
                     <h1 style="color:white;">.</h1>
                     <h1 style="color:#61afef;">println</h1>
                     <h1>("</h1>
@@ -47,7 +48,15 @@
                         <img src="https://i.ibb.co/dmCQbZx/Untitled-design-3-removebg-preview.png" alt="">
                         <h2>5 years</h2>
                     </div>
-                </div>   
+                </div>  
+                <div class="skills-text">
+                    A future game developper
+                </div>
+                <div class="game-box">
+                    <img src="https://i.ibb.co/z4wV0qr/Untitled-design-7.png" alt="">
+                    <h2>Crypted - In development</h2>
+                    <h3>Platformer / Rogue Like</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -106,10 +115,11 @@
 
 #skills{
     text-align: center;
-    padding-top: 250px;
+    padding-top: 100px;
 }
 
 #skills .skills-text{
+    padding-top: 150px;
     font-size: 4em;
 }
 
@@ -141,8 +151,21 @@ a:hover{
     margin-right: 30px;
 }
 
-#skills img{
+.language img{
     width: 150px;
+}
+
+.game-box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.game-box img{
+    border: 21px ridge #a73836;
+    border-radius: 10px 10px 10px 10px;
+    width: 300px;
 }
 
 @media screen and (max-width: 1763px){

@@ -1,18 +1,19 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default defineEventHandler(async (event) => {
 
-    const token = process.env.GH_TOKEN;
-  
+    const token = process.env.GH_TOKEN
+
+    console.log("token", token)
+
     const { data } = await axios({
         method: 'get',
-        url: `https://api.github.com/users/rodzpm/repos`,
+        url: 'https://api.github.com/users/rodzpm/repos',
         headers: {
             Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-            'Accept-Encoding': 'Identify',
+            "Content-type": "application/json",
+            'Accept-Encoding': 'identity',
         },
     })
-
-    return (data);
-  })
+    return data;
+});
