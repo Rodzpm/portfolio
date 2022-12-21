@@ -352,11 +352,12 @@ a:hover {
 <script setup>
 const images = [
 "https://i.ibb.co/K6NKBjC/Untitled-design-9.png",
+"https://i.ibb.co/0c8BBjT/IA-3.png",
 "https://i.ibb.co/6P8D3t6/Untitled-design-8.png",
-"https://i.ibb.co/JkB7q1V/Untitled-design-10.png",
 "https://i.ibb.co/b1pc4fP/IA.png",
-"https://i.ibb.co/h7WYDhK/IA-1.png"
-,"https://i.ibb.co/D1NhtKY/IA-2.png"
+"https://i.ibb.co/h7WYDhK/IA-1.png",
+"https://i.ibb.co/JkB7q1V/Untitled-design-10.png",
+"https://i.ibb.co/D1NhtKY/IA-2.png"
 ];
 let data = await $fetch("/api/repo");
 data = data.filter(val => val.name !== "Rodzpm");
