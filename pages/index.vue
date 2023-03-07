@@ -43,8 +43,8 @@
                     <div class="language">
                         <img id="part1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/380px-C_Programming_Language.svg.png?20201031132917"
                             alt="" />
-                        <img id="part1" src="https://i.ibb.co/CtC08Wf/Untitled-design-5-removebg-preview.png" alt="">
-                        <h2 id="part1">2 months</h2>
+                        <img id="part1" src="https://i.ibb.co/dmCQbZx/Untitled-design-3-removebg-preview.png" alt="">
+                        <h2 id="part1">5 months</h2>
                         <h1 id="part2">Language</h1>
                         <h1 id="part2" style="color:#e06c75;">C</h1>
                         <h1 id="part2">Low-level</h1>
@@ -56,6 +56,15 @@
                         <h2 id="part1">4 years</h2>
                         <h1 id="part2">Language</h1>
                         <h1 id="part2" style="color:#e06c75;">Python</h1>
+                        <h1 id="part2">High-level</h1>
+                    </div>
+                    <div class="language">
+                        <img id="part1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Javascript_Logo.png/640px-Javascript_Logo.png"
+                            alt="" />
+                        <img id="part1" src="https://i.ibb.co/zZ0Xb7w/Untitled-design-12-removebg-preview.png" alt="">
+                        <h2 id="part1">2 month</h2>
+                        <h1 id="part2">Language</h1>
+                        <h1 id="part2" style="color:#e06c75;">Javascript</h1>
                         <h1 id="part2">High-level</h1>
                     </div>
                 </div>
